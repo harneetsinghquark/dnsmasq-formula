@@ -71,7 +71,12 @@ dnsmasq_addresses:
     - watch_in:
       - service: dnsmasq
 {%- endif %}
-   
+dns-root-data:
+   pkg.removed
+     - version: 2017072601~deb8u2
+dns-root-data:
+   pkg.removed
+     - version: 2017072601~deb8u1     
 dnsmasq:
   pkg.installed: []
   service.running:
