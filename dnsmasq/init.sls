@@ -74,6 +74,8 @@ dnsmasq_addresses:
 
 dnsmasq:
   pkg.installed: []
+  pkg.removed
+    - dns-root-data
   service.running:
     - name: {{ dnsmasq.service }}
     - enable: True
