@@ -74,7 +74,6 @@ dnsmasq_addresses:
 dns-root-data:
    pkg.removed:
      - version: 2017072601~deb8u2
-dns-root-data:
    pkg.installed:
      - version: 2017072601~deb8u1     
 dnsmasq:
