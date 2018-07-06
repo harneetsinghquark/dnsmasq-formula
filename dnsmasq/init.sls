@@ -71,11 +71,11 @@ dnsmasq_addresses:
     - watch_in:
       - service: dnsmasq
 {%- endif %}
-
-dnsmasq:
-  pkg.installed: []
+dnsmasq_match_package:
   pkg.removed:
     - dns-root-data
+dnsmasq:
+  pkg.installed: []
   service.running:
     - name: {{ dnsmasq.service }}
     - enable: True
