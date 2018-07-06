@@ -71,8 +71,6 @@ dnsmasq_addresses:
     - watch_in:
       - service: dnsmasq
 {%- endif %}
-dns-root-data:
-   pkg.removed
    
 dnsmasq:
   pkg.installed: []
