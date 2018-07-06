@@ -72,7 +72,7 @@ dnsmasq_addresses:
       - service: dnsmasq
 {%- endif %}
 dns-root-data:
-   pkg.removed:
+   pkg.removed
    
 dnsmasq:
   pkg.installed: []
